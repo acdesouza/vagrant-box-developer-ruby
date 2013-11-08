@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = "file:///Volumes/DATA/Users/acdesouza/instaladores/Vagrant/precise64.box"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--memory", "1024"]
