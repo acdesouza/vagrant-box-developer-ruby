@@ -13,10 +13,12 @@ cat >> ~/.bash_profile <<EOF
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 EOF
 
-# Config Bash
 
 ## Heroku Toolbelt
 echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.bash_profile
+
+
+# Config Bash
 
 cat >> ~/.bash_profile <<EOF
 
@@ -29,5 +31,3 @@ alias ls="ls -G"
 alias grep="grep --color='auto'"
 alias grep_project='grep -r --exclude-dir=.git --exclude-dir=.sass-cache --exclude-dir=coverage --exclude-dir=tmp --exclude-dir=log'
 EOF
-
-# Copy id_rsa
