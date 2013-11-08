@@ -1,4 +1,3 @@
-Vagrant Box for(me, as) a Ruby Developer.
 # Vagrant Box for a Ruby Developer
 
 ## Intent
