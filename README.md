@@ -13,7 +13,7 @@ Use a sandbox environment to develop Ruby projects, so I can mess things up whit
  1. Download Vagrantfile, and provision directory, to your Ruby project root.
  1. vagrant up
  1. vagrant ssh
- 1. See your projec on ~/root_project_directory
+ 1. See your project on ~/root_project_directory
 
 ### Usage
 
