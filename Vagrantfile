@@ -23,6 +23,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ["modifyvm", :id, "--cpus"  , "2"   ]
   end
 
+  # Use my own SSH id
+  config.ssh.forward_agent = true
+
   config.vm.synced_folder ".", "/home/vagrant/#{APP}"
 
   # Enable Unicorn
@@ -32,6 +35,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: 'provision/install-dev-tools.sh'
   config.vm.provision "shell", path: 'provision/install-heroku-toolbelt.sh'
   config.vm.provision "shell", path: 'provision/install-rvm.sh', privileged: false
-
-  # Copy id_rsa
 end
