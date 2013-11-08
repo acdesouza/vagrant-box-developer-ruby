@@ -9,6 +9,8 @@ EOF
 
 \curl -L https://get.rvm.io | bash
 
+source ~/.bash_profile
+
 cat >> ~/.bash_profile <<EOF
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 EOF
