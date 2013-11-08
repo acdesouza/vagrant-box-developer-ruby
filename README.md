@@ -36,4 +36,3 @@ Use a sandbox environment to develop Ruby projects, so I can mess things up whit
  - [x] Allow access, from host, to Unicorn Server, using Foreman. Yep. I love Heroku ;)
  - [ ] PostgreSQL
  - [ ] Config PS1 bash_profile
->>>>>>> Add README
