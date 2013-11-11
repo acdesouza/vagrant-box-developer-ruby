@@ -43,3 +43,7 @@ Use a sandbox environment to develop Ruby projects, so I can mess things up whit
    - [ ] set user to ssh
  - [ ] PostgreSQL
  - [ ] Config PS1 bash_profile
+
+# Sources
+ - http://simplesideias.com.br/usando-o-vagrant-como-ambiente-de-desenvolvimento-no-windows
+ - http://docs.vagrantup.com/v2/
