@@ -6,6 +6,8 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   APP = File.basename(Dir.getwd)
+  HOST_USER = (`whoami`).strip
+  HOST_PASSWORD='S3nh4B1z4rr4'
 
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
@@ -35,4 +37,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: 'provision/install-dev-tools.sh'
   config.vm.provision "shell", path: 'provision/install-heroku-toolbelt.sh'
   config.vm.provision "shell", path: 'provision/install-rvm.sh', privileged: false
+  config.vm.provision "shell", path: 'provision/create-host-user.sh', args: "#{HOST_USER} #{HOST_PASSWORD}"
 end

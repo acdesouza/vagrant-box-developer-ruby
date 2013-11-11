@@ -37,9 +37,9 @@ Use a sandbox environment to develop Ruby projects, so I can mess things up whit
  - [x] Use host ssh config. Works on OSX Mavericks
  - [x] Share root project directory with guest
  - [x] Allow access, from host, to Unicorn Server, using Foreman. Yep. I love Heroku ;)
- - [ ] Use host account on guest:
-   - [ ] create host user on guest
-   - [ ] add user to sudoers list
+ - [-] Use host account on guest:
+   - [x] create host user on guest
+   - [x] add user to sudoers list
    - [ ] set user to ssh
  - [ ] PostgreSQL
  - [ ] Config PS1 bash_profile
