@@ -40,7 +40,7 @@ Use a sandbox environment to develop Ruby projects, so I can mess things up whit
  - [-] Use host account on guest:
    - [x] create host user on guest
    - [x] add user to sudoers list
-   - [ ] install rvm to this user, not Vagrant
+   - [x] install rvm to this user, not Vagrant
    - [ ] set user to ssh
    - [ ] login to this user after vagrant ssh
  - [ ] PostgreSQL
