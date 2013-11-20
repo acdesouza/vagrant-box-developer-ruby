@@ -21,8 +21,3 @@ cat >> \$HOME/.bash_profile <<EOF
 [[ -r \$rvm_path/scripts/completion ]] && . \$rvm_path/scripts/completion
 EOF
 RVM_INSTALL
-
-# Heroku Toolbelt
-$RUN_AS<<HEROKU_TOOLBELT_INSTALL
-echo 'PATH="/usr/local/heroku/bin:\$PATH"' >> \$HOME/.bash_profile
-HEROKU_TOOLBELT_INSTALL
