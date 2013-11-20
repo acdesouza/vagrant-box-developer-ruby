@@ -38,4 +38,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: 'provision/install-heroku-toolbelt.sh'
   config.vm.provision "shell", path: 'provision/create-host-user.sh', args: "#{HOST_USER} #{HOST_PASSWORD}"
   config.vm.provision "shell", path: 'provision/install-rvm.sh', privileged: false, args: "#{HOST_USER}"
+  config.vm.provision "shell", path: 'provision/config-bash.sh', privileged: false, args: "#{HOST_USER}"
 end
