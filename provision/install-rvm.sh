@@ -29,9 +29,17 @@ HEROKU_TOOLBELT_INSTALL
 
 
 # Config Bash
-
 $RUN_AS<<CONFIG_BASH
 cat >> \$HOME/.bash_profile <<EOF
+
+# usuario@host:current_path
+export PS1='\u@\h:\[\033[01;34m\]\w\[\033[00m\]'
+
+# Mostrar o branch, do git, atual. Quando a pasta atual estiver no git.
+export PS1=\$PS1'\$(__git_ps1 " \[\033[1;32m\](%s)\[\033[0m\]")'
+
+# Quebrar linha e colocar o $ .
+export PS1=\$PS1'\n\[\033[0;33m\]\$\[\033[0m\] '
 
 alias emacs='echo "segmentation fault"'
 
