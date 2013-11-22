@@ -46,6 +46,7 @@ Use a sandbox environment to develop Ruby projects, so I can mess things up whit
  - [ ] PostgreSQL
  - [x] Config PS1 bash_profile
  - [ ] Update VirtualBox Guest Additions
+ - [ ] Install ruby: Latest stable version or same as Gemfile if present.
 
 # Sources
  - http://simplesideias.com.br/usando-o-vagrant-como-ambiente-de-desenvolvimento-no-windows
