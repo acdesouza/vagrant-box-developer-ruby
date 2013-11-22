@@ -41,6 +41,7 @@ Use a sandbox environment to develop Ruby projects, so I can mess things up whit
    - [x] create host user on guest
    - [x] add user to sudoers list
    - [x] install rvm to this user, not Vagrant
+   - [ ] Add shared folder host user ownership
    - [ ] set user to ssh
    - [ ] login to this user after vagrant ssh
  - [ ] PostgreSQL
