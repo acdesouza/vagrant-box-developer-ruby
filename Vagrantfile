@@ -28,7 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Use my own SSH id
   config.ssh.forward_agent = true
 
-  config.vm.synced_folder ".", "/app/#{APP}"
+  config.vm.synced_folder ".", "/app/#{APP}", :owner => HOST_USER
 
   # Enable Unicorn
   config.vm.network :forwarded_port, guest: 5000, host: 5000
