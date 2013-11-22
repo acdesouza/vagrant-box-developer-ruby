@@ -45,7 +45,9 @@ Use a sandbox environment to develop Ruby projects, so I can mess things up whit
    - [ ] login to this user after vagrant ssh
  - [ ] PostgreSQL
  - [x] Config PS1 bash_profile
+ - [ ] Update VirtualBox Guest Additions
 
 # Sources
  - http://simplesideias.com.br/usando-o-vagrant-como-ambiente-de-desenvolvimento-no-windows
  - http://docs.vagrantup.com/v2/
+ - https://github.com/dotless-de/vagrant-vbguest
